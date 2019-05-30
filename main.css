@@ -1,3 +1,33 @@
-body {
-    color: red;
+html body {
+    color: #222;
+}
+
+.header {
+    height: 100px;
+}
+
+.main {
+    padding-right: 12%;
+    padding-left: calc(12% + 249px);
+}
+
+.main table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+}
+
+h1 {
+    text-align: center;
+}
+
+.order-table tbody tr:first-child {
+    border-top: 1px solid #d3d3d3;
+}
+
+.order-table tbody tr {
+    border-top: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
 }
