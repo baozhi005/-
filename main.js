@@ -54,7 +54,10 @@ function generatorTemplate(cartItems) {
 function generatorDiscountProductListTemplate(discountProductList) {
     var template = ''
     discountProductList.forEach(function(product) {
-        template += '<li> 名称：' + product.name + '，数量：' + product.count + product.unit + '</li>'
+        template += '<li class="discount-product-item">' +
+         '<div class="item"><span class="name">名称：</span><span class="value">' + product.name + '</span></div>' +
+         '<div class="item"><span class="name">数量：</span><span class="value">' + product.count + product.unit + '</span></div>' +
+         '</li>'
     })
     return template
 }
@@ -68,11 +71,11 @@ function renderDiscountProductList(discountProductList) {
 }
 
 function setTotlePrice(totalPrice) {
-    document.querySelector('.total-price').textContent = '总计：' + totalPrice + '(元)'
+    document.querySelector('.total-price').textContent = totalPrice + '(元)'
 }
 
 function setDiscountPrice(discountPrice) {
-    document.querySelector('.discount-price').textContent = '节省：' + discountPrice + '(元)'
+    document.querySelector('.discount-price').textContent = discountPrice + '(元)'
 }
 
 document.addEventListener('DOMContentLoaded', () => {
