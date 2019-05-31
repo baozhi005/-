@@ -3,21 +3,21 @@ var cartItems = [
         name: '可口可乐',
         count: '3',
         unit: '瓶',
-        perPrice: '3.00',
+        price: '3.00',
         totalPrice: '6.00'
     },
     {
         name: '羽毛球',
         count: '5',
         unit: '个',
-        perPrice: '1.00',
+        price: '1.00',
         totalPrice: '4.00'
     },
     {
         name: '苹果',
         count: '2',
         unit: '斤',
-        perPrice: '5.50',
+        price: '5.50',
         totalPrice: '11.00'
     }
 ]
@@ -45,7 +45,7 @@ function generatorTemplate(cartItems) {
         '<td>' + '假装这里是图片' + '</td>' +         
         '<td>' + cartItem.name + '</td>' + 
         '<td>' + cartItem.count + cartItem.unit+ '</td>' + 
-        '<td>' + cartItem.perPrice + '(元)</td>' + 
+        '<td>' + cartItem.price + '(元)</td>' + 
         '<td>' + cartItem.totalPrice + '(元)</td></tr>';
     })
     return template
