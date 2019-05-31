@@ -28,7 +28,7 @@ var discountProductList = [
     
 ]
 
-var summery = {
+var summary = {
     totalPrice: '21.00',
     discountPrice: '4.00'
 }
@@ -36,7 +36,7 @@ var summery = {
 var result = {
     cartItems: cartItems,
     discountProductList: discountProductList,
-    summery: summery
+    summary: summary
 }
 function generatorTemplate(cartItems) {
     var template = ''
@@ -78,6 +78,6 @@ function setDiscountPrice(discountPrice) {
 document.addEventListener('DOMContentLoaded', () => {
     renderTable(result.cartItems)
     renderDiscountProductList(result.discountProductList)
-    setTotlePrice(result.summery.totalPrice)
-    setDiscountPrice(result.summery.discountPrice)
+    setTotlePrice(result.summary.totalPrice)
+    setDiscountPrice(result.summary.discountPrice)
 })
