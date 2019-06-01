@@ -1,9 +1,10 @@
 /* reset */
+
 html body {
     color: #222;
     padding: 0;
     margin: 0;
-    font-family: PingFang SC,Verdana,Helvetica Neue,Microsoft Yahei,Hiragino Sans GB,Microsoft Sans Serif,WenQuanYi Micro Hei,sans-serif;
+    font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 
 ul, li {
@@ -22,6 +23,7 @@ h2 {
 }
 
 /* header */
+
 .header {
     height: 60px;
     position: relative;
@@ -30,7 +32,7 @@ h2 {
     justify-content: center;
     padding-left: calc(12%);
     padding-right: 12%;
-    background: rgba(45,45,45,0.98);
+    background: rgba(45, 45, 45, 0.98);
     color: white;
     letter-spacing: 4px;
 }
@@ -41,6 +43,7 @@ header img {
 }
 
 /* main */
+
 .main {
     padding-right: 12%;
     padding-left: calc(12% + 100px);
@@ -49,7 +52,6 @@ header img {
     background: #fafafa;
     min-height: calc(100% - 60px)
 }
-
 
 .main table {
     width: 100%;
@@ -101,6 +103,7 @@ tr {
 }
 
 /* summary */
+
 .discount-product-list {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -119,12 +122,12 @@ tr {
     padding-right: 5px;
 }
 
-.discount-product-item{
+.discount-product-item {
     display: flex;
 }
 
-.discount-product-item .item + .item{ 
-   padding-left: 20px;
+.discount-product-item .item+.item {
+    padding-left: 20px;
 }
 
 .total-price-container {
@@ -138,8 +141,8 @@ tr {
     color: #777;
 }
 
-
 /* text-input */
+
 .text-input {
     position: absolute;
     top: 40px;
@@ -149,7 +152,7 @@ tr {
     flex-direction: column;
 }
 
-.text-input .title{
+.text-input .title {
     text-align: center;
     font-size: 14px;
     color: #666;
