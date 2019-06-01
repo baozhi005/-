@@ -1,13 +1,16 @@
 /* reset */
+
 html body {
     color: #222;
     padding: 0;
     margin: 0;
+    font-family: PingFang SC, Verdana, Helvetica Neue, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
 }
 
 ul, li {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 textarea {
@@ -15,35 +18,40 @@ textarea {
     resize: none;
 }
 
+h2 {
+    font-weight: normal;
+}
+
 /* header */
+
 .header {
-    margin-top: 20px;
-    height: 100px;
+    height: 60px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: calc(12%);
+    padding-right: 12%;
+    background: rgba(45, 45, 45, 0.98);
+    color: white;
+    letter-spacing: 4px;
 }
 
 header img {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    left: calc(12% + 249px);
-}
-
-header .user {
-    position: absolute;
-    right: calc(12%);
-    top: 10px;
-    font-size: 12px;
-    color: #666;
+    width: 25px;
+    padding-right: 20px;
 }
 
 /* main */
+
 .main {
     padding-right: 12%;
-    padding-left: calc(12% + 249px);
+    padding-left: calc(12% + 100px);
+    padding-top: 40px;
     position: relative;
+    background: #fafafa;
+    min-height: calc(100% - 60px)
 }
-
 
 .main table {
     width: 100%;
@@ -66,7 +74,7 @@ tr, td {
 }
 
 td img {
-    width: 150px;
+    width: 80px;
 }
 
 table {
@@ -99,13 +107,18 @@ tr {
 }
 
 /* summary */
+
 .discount-product-list {
     padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 13px;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
 }
 
 .discount-product-list .description {
     color: #666;
+    padding-bottom: 6px;
 }
 
 .discount-product-list .name {
@@ -113,16 +126,16 @@ tr {
     padding-right: 5px;
 }
 
-.discount-product-item{
+.discount-product-item {
     display: flex;
 }
 
-.discount-product-item .item + .item{ 
-   padding-left: 20px;
+.discount-product-item .item+.item {
+    padding-left: 20px;
 }
 
-
 .total-price-container {
+    padding-top: 20px;
     font-size: 20px;
     font-weight: 500;
 }
@@ -132,17 +145,18 @@ tr {
     color: #777;
 }
 
-
 /* text-input */
+
 .text-input {
     position: absolute;
-    top: 10px;
+    top: 40px;
     left: 30px;
+    width: calc(12%);
     display: flex;
     flex-direction: column;
 }
 
-.text-input .title{
+.text-input .title {
     text-align: center;
     font-size: 14px;
     color: #666;
