@@ -29,14 +29,6 @@ header img {
     left: calc(12% + 249px);
 }
 
-header .user {
-    position: absolute;
-    right: calc(12%);
-    top: 10px;
-    font-size: 12px;
-    color: #666;
-}
-
 /* main */
 .main {
     padding-right: 12%;
@@ -117,7 +109,6 @@ tr {
 .discount-product-item .item + .item{ 
    padding-left: 20px;
 }
-
 
 .total-price-container {
     font-size: 20px;
