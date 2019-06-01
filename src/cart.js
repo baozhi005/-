@@ -50,6 +50,7 @@ function createCartList(itemList, inputs) {
          name: itemList[i].name,
          unit: itemList[i].unit,
          price: itemList[i].price,
+         img: itemList[i].img,
          count: count,
          barcode: itemList[i].barcode
        }
