@@ -1,36 +1,36 @@
 var cartItems = [
     {
         name: '可口可乐',
-        count: '3',
+        count: 3,
         unit: '瓶',
-        price: '3.00',
-        totalPrice: '6.00'
+        price: 3,
+        totalPrice: 6
     },
     {
         name: '羽毛球',
-        count: '5',
+        count: 5,
         unit: '个',
-        price: '1.00',
-        totalPrice: '4.00'
+        price: 1,
+        totalPrice: 4.00
     },
     {
         name: '苹果',
-        count: '2',
+        count: 2,
         unit: '斤',
-        price: '5.50',
-        totalPrice: '11.00'
+        price: 5.50,
+        totalPrice: 11.00
     }
 ]
 
 var discountProductList = [
-    {name: '可口可乐', count: '1', unit: '瓶'},
-    {name: '羽毛球', count: '1', unit: '个'},
+    {name: '可口可乐', count: 1, unit: '瓶'},
+    {name: '羽毛球', count: 1, unit: '个'},
     
 ]
 
 var summary = {
-    totalPrice: '21.00',
-    discountPrice: '4.00'
+    totalPrice: 21,
+    discountPrice: 4.00
 }
 
 var result = {
@@ -42,11 +42,11 @@ function generatorTemplate(cartItems) {
     var template = ''
     cartItems.forEach(function(cartItem) {
         template += '<tr>' + 
-        '<td>' + '假装这里是图片' + '</td>' +         
+        '<td>' + '图片占位' + '</td>' +         
         '<td>' + cartItem.name + '</td>' + 
         '<td>' + cartItem.count + cartItem.unit+ '</td>' + 
-        '<td>' + cartItem.price + '(元)</td>' + 
-        '<td>' + cartItem.totalPrice + '(元)</td></tr>';
+        '<td>' + cartItem.price.toFixed(2) + '(元)</td>' + 
+        '<td>' + cartItem.totalPrice.toFixed(2)+ '(元)</td></tr>';
     })
     return template
 }
@@ -71,11 +71,11 @@ function renderDiscountProductList(discountProductList) {
 }
 
 function setTotlePrice(totalPrice) {
-    document.querySelector('.total-price').textContent = totalPrice + '(元)'
+    document.querySelector('.total-price').textContent = totalPrice.toFixed(2) + '(元)'
 }
 
 function setDiscountPrice(discountPrice) {
-    document.querySelector('.discount-price').textContent = discountPrice + '(元)'
+    document.querySelector('.discount-price').textContent = discountPrice.toFixed(2) + '(元)'
 }
 
 document.addEventListener('DOMContentLoaded', () => {
