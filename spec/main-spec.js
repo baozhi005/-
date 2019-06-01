@@ -9,21 +9,24 @@ describe('pos', function () {
       count: 5,
       unit: '个',
       price: 1.00,
-      totalPrice: 4.00
+      totalPrice: 4.00,
+      img: './imgs/badminton.png'
     },
     {
       name: '苹果',
       count: 2,
       unit: '斤',
       price: 5.50,
-      totalPrice: 11.00
+      totalPrice: 11.00,
+      img: './imgs/apple.jpeg'
     },
     {
       name: '可口可乐',
       count: 3,
       unit: '瓶',
       price: 3.00,
-      totalPrice: 6.00
+      totalPrice: 6.00,
+      img: './imgs/coco-cola.jpg'
     }
   ]
 

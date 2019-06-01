@@ -16,7 +16,8 @@ function createItemList(allItems, inputs) {
           name: allItems[k].name,
           unit: allItems[k].unit,
           price: allItems[k].price,
-          barcode: allItems[k].barcode
+          barcode: allItems[k].barcode,
+          img: allItems[k].img
         }
 
         list.push(newItem)
@@ -90,7 +91,8 @@ function caculateDiscount (cartList, promotions) {
       count: cartList[m].count,
       unit: cartList[m].unit,
       price: cartList[m].price,
-      totalPrice: totalPrice
+      totalPrice: totalPrice,
+      img: cartList[m].img
     }
 
     cartItems.push(temp);
