@@ -89,5 +89,9 @@ function renderView(result) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    renderView(result)
+    document.querySelector('.confirm').addEventListener('click', function() {
+        var userInput = document.querySelector('#user-input').value
+        //TODO get result
+        renderView(result)
+    })
 })
