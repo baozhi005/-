@@ -6,4 +6,4 @@
 
 ## 效果图
 
-![POS PAGE](https://github.com/sighWang/pos-page/blob/v3/imgs/pos-page.png)
+![POS PAGE](https://github.com/sighWang/pos-page/blob/develop/imgs/pos-page.png)
