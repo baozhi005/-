@@ -4,6 +4,7 @@ var cartItems = [
         count: 3,
         unit: '瓶',
         price: 3,
+        img: './imgs/coco-cola.jpg',
         totalPrice: 6
     },
     {
@@ -11,6 +12,7 @@ var cartItems = [
         count: 5,
         unit: '个',
         price: 1,
+        img: './imgs/badminton.png',
         totalPrice: 4.00
     },
     {
@@ -18,6 +20,7 @@ var cartItems = [
         count: 2,
         unit: '斤',
         price: 5.50,
+        img: './imgs/apple.jpeg',
         totalPrice: 11.00
     }
 ]
@@ -42,7 +45,7 @@ function generatorTemplate(cartItems) {
     var template = ''
     cartItems.forEach(function(cartItem) {
         template += '<tr>' + 
-        '<td>' + '图片占位' + '</td>' +         
+        '<td><img src="' + cartItem.img + '"></td>' +         
         '<td>' + cartItem.name + '</td>' + 
         '<td>' + cartItem.count + cartItem.unit+ '</td>' + 
         '<td>' + cartItem.price.toFixed(2) + '(元)</td>' + 
