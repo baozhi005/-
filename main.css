@@ -87,6 +87,13 @@ tr {
     vertical-align: baseline;
 }
 
+td img {
+    width: 80px;
+}
+td a {
+    text-decoration: unset;
+    color: rgb(34, 34, 34);;
+}
 .order-table thead th {
     font-size: 11px;
     font-weight: 300;
